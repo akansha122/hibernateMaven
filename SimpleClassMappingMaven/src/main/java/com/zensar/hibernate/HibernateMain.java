@@ -21,6 +21,7 @@ public class HibernateMain {
 		product.setBrand("dell");
 		product.setPrice(8753.2f);
 		session.save(product);
+		System.out.println("product is save");
 		transaction.commit();
 		session.close();
 	}
